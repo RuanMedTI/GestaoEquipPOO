@@ -12,12 +12,12 @@ namespace GestaoEquipPOO.ConsoleApp.Tela
     {
         const int CAPACIDADE_REGISTROS = 100;
 
-        static ControladorEquipamento controladorEquipamento = new ControladorEquipamento(CAPACIDADE_REGISTROS);
-        static ControladorSolicitante controladorSolicitante = new ControladorSolicitante(CAPACIDADE_REGISTROS);
-        static TelaEquipamento telaEquipamento = new TelaEquipamento(controladorEquipamento);
-        static TelaSolicitante telaSolicitante = new TelaSolicitante(controladorSolicitante);
-        static ControladorChamado controladorChamado = new ControladorChamado(CAPACIDADE_REGISTROS, controladorEquipamento);
-        static TelaChamado telaChamado = new TelaChamado(telaEquipamento, controladorChamado, telaSolicitante);
+        public static ControladorEquipamento controladorEquipamento = new ControladorEquipamento(CAPACIDADE_REGISTROS);
+        public static ControladorSolicitante controladorSolicitante = new ControladorSolicitante(CAPACIDADE_REGISTROS);
+        public static TelaEquipamento telaEquipamento = new TelaEquipamento(controladorEquipamento);
+        public static TelaSolicitante telaSolicitante = new TelaSolicitante(controladorSolicitante);
+        public static ControladorChamado controladorChamado = new ControladorChamado(CAPACIDADE_REGISTROS, controladorEquipamento);
+        public static TelaChamado telaChamado = new TelaChamado(telaEquipamento, controladorChamado, telaSolicitante);
 
         public virtual object ObterTela()
         {
