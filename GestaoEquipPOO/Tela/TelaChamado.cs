@@ -43,11 +43,13 @@ namespace GestaoEquipPOO.ConsoleApp.Tela
             Console.Clear();
 
             Console.WriteLine("Visualização dos solicitantes cadastrados...");
+            Console.WriteLine("------------------------------------------------------------");
             Console.ReadLine();
 
             telaSolicitante.Visualizar();
 
             Console.WriteLine("Agora a visualização dos equipamentos...");
+            Console.WriteLine("------------------------------------------------------------");
             Console.ReadLine();
 
             telaEquipamento.Visualizar();        
